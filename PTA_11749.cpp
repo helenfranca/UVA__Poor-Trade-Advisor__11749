@@ -1,15 +1,9 @@
-// http://uva.onlinejudge.org/external/117/11749.html
-// Tag: DFS
-// Runtime: 0.482s
- 
 // 22441726
 
 #include <cstdio>
 #include <algorithm>
 #include <cstring>
 #include <set>
- 
-#define Inf 2147483648
  
 using namespace std;
  
