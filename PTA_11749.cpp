@@ -1,11 +1,12 @@
-// 11749
 // 22441726
 
 #include <cstdio>
 #include <algorithm>
 #include <cstring>
 #include <set>
- 
+#include <iostream>
+#define Inf 2147483648
+
 using namespace std;
  
 int n; 
@@ -26,7 +27,7 @@ void dfs(int at)
         }
     }
 }
- 
+
 void reinicia(){
     for ( int i = 0; i < 505; i++ ) {
         for ( int j = 0; j < 505; j++ ) {
@@ -34,7 +35,7 @@ void reinicia(){
         }
     }
 }
- 
+
 int main (){
     int m;
      
@@ -50,7 +51,7 @@ int main (){
             int a, b, c;
             scanf ("%d %d %d", &a, &b, &c);
              
-            // várias arestas com PPA diferente, pega o maior
+            // Várias arestas com PPA diferente, pega o maior
             if (c > matriz [a] [b])
                 matriz [a] [b] = matriz [b] [a] = c;
              
@@ -69,7 +70,8 @@ int main (){
             }
         }
          
-        printf ("%d\n", forteConectado);
+        cout << forteConectado;
+        cout << endl;
     }
      
     return 0;
